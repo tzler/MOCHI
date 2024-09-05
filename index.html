@@ -56,7 +56,6 @@
           <i class="fas fa-home"></i>
       </span>
       </a>
-
       <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">
           More Research
@@ -166,23 +165,6 @@
   </div>
 </section>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="./static/images/benchmark_2024_teaser.png"
-           class="interpolation-image"
-           width="75%"
-           alt="Interpolate start reference image."/>
-<!--       <h2 class="subtitle has-text-centered">
-        <bold>How well do computer vision models represent the 3D structure of objects?</bold> 
-        We develop a benchmark using a shape inference task from the cognitive sciences: Multiview Object Consistency in Humans and in Image models (MOCHI). 
-        Given three images of objects from random viewpoints, observers must identify which image depicts the object that is different. 
-        We compare human performance (35K trials from over 500 subjects, including accuracy, reaction time, and gaze data) against a number of standard computer vision models.
-      </h2> -->
-    </div>
-  </div>
-</section>
-
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
@@ -208,105 +190,22 @@
 </section>
 
 
-<section class="section">
+<section class="hero teaser is-centered">
   <div class="container is-max-desktop">
-
-    <div class="columns is-centered">
-    <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
-
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
-        <div class="content has-text-justified">
-          <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
-        <br/>
-        <!--/ Interpolating. -->
-
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <!--/ Re-rendering. -->
-
-      </div>
+    <div class="hero-body">
+      <img src="./static/images/benchmark_2024_teaser.png"
+           class="interpolation-image"
+           width="65%"
+           alt="Interpolate start reference image."/>
+<!--       <h2 class="subtitle has-text-centered">
+        <bold>How well do computer vision models represent the 3D structure of objects?</bold> 
+        We develop a benchmark using a shape inference task from the cognitive sciences: Multiview Object Consistency in Humans and in Image models (MOCHI). 
+        Given three images of objects from random viewpoints, observers must identify which image depicts the object that is different. 
+        We compare human performance (35K trials from over 500 subjects, including accuracy, reaction time, and gaze data) against a number of standard computer vision models.
+      </h2> -->
     </div>
-    <!--/ Animation. -->
-
-
-    <!-- Concurrent Work. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Concurrent Work. -->
-
   </div>
 </section>
-
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
@@ -319,7 +218,6 @@
 }</code></pre>
   </div>
 </section>
-
 
 <footer class="footer">
   <div class="container">
