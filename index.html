@@ -87,32 +87,35 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">MOCHI</h1>
+          <h1 class="title is-1 publication-title">Evaluating Multiview Object Consistency in Humans and Image Models</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://keunhong.com">Keunhong Park</a><sup>1</sup>,</span>
+              <a href="https://tzler.github.io/">Tyler Bonnen</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://utkarshsinha.com">Utkarsh Sinha</a><sup>2</sup>,</span>
+              <a href="https://stephanie-fu.github.io/">Stephanie Fu</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://jonbarron.info">Jonathan T. Barron</a><sup>2</sup>,
+              <a href="https://yutongbai.com/">Yuton Bai</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="http://sofienbouaziz.com">Sofien Bouaziz</a><sup>2</sup>,
+              <a href="https://scholar.google.com/citations?user=lNQeAXEAAAAJ&hl=en">Thomas O'Connell</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="https://www.danbgoldman.com">Dan B Goldman</a><sup>2</sup>,
+              <a href="https://www.yonifriedman.com/">Yoni Freedman</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a><sup>1,2</sup>,
+              <a href="https://mcgovern.mit.edu/profile/nancy-kanwisher/">Nancy Kanwisher</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
+              <a href="https://web.mit.edu/cocosci/josh.html">Joshua B. Tennenbaum</a><sup>2</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://people.eecs.berkeley.edu/~efros/">Alexei Efros</a><sup>2</sup>
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Washington,</span>
-            <span class="author-block"><sup>2</sup>Google Research</span>
+            <span class="author-block"><sup>1</sup>UC Berkeley,</span>
+            <span class="author-block"><sup>2</sup>MIT</span>
           </div>
 
           <div class="column has-text-centered">
@@ -257,31 +260,15 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
-          </p>
-          <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            We introduce a benchmark to directly evaluate the alignment between human observers and vision models on a 3D shape inference task. 
+            We leverage an experimental design from the cognitive sciences which requires zero-shot visual inferences about object shape: 
+            given a set of images, participants identify which contain the same/different objects, despite considerable viewpoint variation. 
+            We draw from a diverse range of images that include common objects (e.g., chairs) as well as abstract shapes (i.e., procedurally generated `nonsense' objects). 
+            After constructing over 2000 unique image sets, we administer these tasks to human participants, collecting 35K trials of behavioral data from over 500 participants. 
+            This includes explicit choice behaviors as well as intermediate measures, such as reaction time and gaze data. 
+            We then evaluate the performance of common vision models (e.g., DINOv2, MAE, CLIP). 
+            We find that humans outperform all models by a wide margin. 
+            Using a multi-scale evaluation approach, we identify underlying similarities and differences between models and humans: while human-model performance is correlated, humans allocate more time/processing on challenging trials. 
           </p>
         </div>
       </div>
@@ -290,13 +277,13 @@
 
     <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+<!--       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
           <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
-      </div>
+      </div> -->
     </div>
     <!--/ Paper video. -->
   </div>
@@ -309,7 +296,7 @@
     <div class="columns is-centered">
 
       <!-- Visual Effects. -->
-      <div class="column">
+<!--       <div class="column">
         <div class="content">
           <h2 class="title is-3">Visual Effects</h2>
           <p>
@@ -321,11 +308,11 @@
                     type="video/mp4">
           </video>
         </div>
-      </div>
+      </div> -->
       <!--/ Visual Effects. -->
 
       <!-- Matting. -->
-      <div class="column">
+<!--       <div class="column">
         <h2 class="title is-3">Matting</h2>
         <div class="columns is-centered">
           <div class="column content">
@@ -341,7 +328,7 @@
 
         </div>
       </div>
-    </div>
+    </div> -->
     <!--/ Matting. -->
 
     <!-- Animation. -->
