@@ -5,7 +5,13 @@ This is the repository that contains source code for the [Nerfies website](https
 If you find MOCHI useful for your work please cite:
 
 ```
-
+@inproceedings{bonnen2024mochi,
+      author  =  {Tyler Bonnen and Stephanie Fu and Yutong Bai and Thomas O'Connell and Yoni Friedman and Nancy Kanwisher and Joshua B. Tenenbaum and Alexei A. Efros},
+      title   =  {Evaluating Multiview Object Consistency in Humans and Image Models},
+      journal =  {NeurIPS},
+      year    =  {2024},
+      url     =  {https://arxiv.org/abs/2409.05862},
+      }
 ```
 
 # Website License
